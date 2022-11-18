@@ -1,0 +1,41 @@
+:root{
+  /* FONTS */
+  --primaryFont: 'Oswald', sans-serif;
+  --secondaryFont: 'Libre Franklin', sans-serif;
+  /* COLORS */
+  --white: #ffffff;
+  --washedblack: #181818;
+  --midgrey: #656565;
+  --footerbg: #f7f7f7;
+  /* TRANSITIONS */
+  --mytransition: 200ms ease-in-out;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+::selection{
+  background-color: var(--washedblack);
+  color: var(--white);
+}
+
+html, body, .site-wrapper{
+  height: 100%;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+img{
+  max-width: 100%;
+  object-fit: cover;
+  transition: var(--mytransition);
+}

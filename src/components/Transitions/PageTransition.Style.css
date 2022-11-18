@@ -1,0 +1,38 @@
+.page-transition-wrapper{
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background-color: black;
+    z-index: 9999;
+}
+
+.page-transition-wrapper .hueman-wrapper{
+    width: 60px;
+    padding: 8px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.page-transition-wrapper .hueman{
+    color: var(--washedblack);
+    padding-left: 2px;
+    font-weight: 700;
+    font-size: 5rem;
+    font-family: var(--primaryFont);
+    font-style: italic;
+}
+
+@media (min-width: 950px){
+    .page-transition-wrapper .hueman-wrapper{
+        padding: 1rem;
+        width: 72px;
+    }
+
+    .page-transition-wrapper .hueman{
+        font-size: 6rem;
+    }
+}

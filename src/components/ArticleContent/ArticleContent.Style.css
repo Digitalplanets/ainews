@@ -1,0 +1,116 @@
+.article-content-container .article-header-text{
+    height: auto;
+    padding: 8rem 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.article-header-text .article-header-text_category, .article-header-text_preview-text{
+    color: var(--washedblack);
+    font-weight: 300;
+    font-family: var(--primaryFont);
+    font-size: 2rem;
+}
+
+.article-header-text_category{
+    margin-top: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.article-header-text .article-header-text_title{
+    color: var(--washedblack);
+    font-weight: 600;
+    font-family: var(--secondaryFont);
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.article-content-container .article-paragraph-wrapper{
+    margin-top: 6rem;
+}
+
+.article-paragraph-wrapper .article-paragraph, .first-paragraph{
+    padding: 0 2rem;
+    color: var(--washedblack);
+    font-weight: 300;
+    font-family: var(--secondaryFont);
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+@media(min-width: 650px){
+    
+}
+
+.first-paragraph:first-of-type::first-letter{
+    float: left;
+    font-weight: 700;
+    font-size: 8rem;
+    font-style: italic;
+    line-height: 50px;
+}
+
+
+.related-article-text{
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: var(--washedblack);
+    text-align: center;
+}
+
+.related-article-text .related-article-text_head{
+    margin-bottom: 2rem;
+    color: var(--white);
+    font-weight: 300;
+    font-family: var(--primaryFont);
+    font-size: 2rem;
+}
+
+.related-article-text .related-article-text_title{
+    color: var(--white);
+    font-weight: 600;
+    font-family: var(--secondaryFont);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.related-article-text .related-article-text_category, .related-article-text_preview-text{
+    color: var(--white);
+    font-weight: 300;
+    font-family: var(--primaryFont);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 650px){
+    .article-header-wrapper{
+        padding: 6rem 0 0;
+    }
+
+    .article-content-container .article-header-wrapper .article-header-text{
+        padding: 8rem 4rem;
+    }
+
+    .article-content-container .article-paragraph-wrapper .article-paragraph, .first-paragraph{
+        padding: 0 4rem;
+    }
+}
+
+@media (min-width: 950px){
+    .article-header-wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    .article-content-container .article-header-text{
+        padding: 10rem 6rem 0;
+    }
+
+    .article-header-text, .article-header-img{
+        width: 50%;
+    }
+}

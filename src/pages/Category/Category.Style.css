@@ -1,0 +1,19 @@
+.category-container{
+    padding-top: 6rem;
+}
+
+.category-container .category-title{
+    margin: 2.5rem 0;
+    text-align: center;
+    color: var(--washedblack);
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+@media (min-width: 650px){
+    .category-container .category-title{
+        margin: 2.5rem 0 0;
+    }
+}
